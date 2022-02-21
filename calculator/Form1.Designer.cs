@@ -209,7 +209,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(283, 126);
+            this.btnadd.Location = new System.Drawing.Point(266, 127);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(53, 23);
             this.btnadd.TabIndex = 16;
@@ -219,7 +219,7 @@
             // 
             // btnminus
             // 
-            this.btnminus.Location = new System.Drawing.Point(283, 156);
+            this.btnminus.Location = new System.Drawing.Point(266, 156);
             this.btnminus.Name = "btnminus";
             this.btnminus.Size = new System.Drawing.Size(49, 23);
             this.btnminus.TabIndex = 18;
@@ -229,7 +229,7 @@
             // 
             // btnmulty
             // 
-            this.btnmulty.Location = new System.Drawing.Point(283, 185);
+            this.btnmulty.Location = new System.Drawing.Point(266, 184);
             this.btnmulty.Name = "btnmulty";
             this.btnmulty.Size = new System.Drawing.Size(48, 23);
             this.btnmulty.TabIndex = 19;
@@ -239,7 +239,7 @@
             // 
             // btndiv
             // 
-            this.btndiv.Location = new System.Drawing.Point(283, 213);
+            this.btndiv.Location = new System.Drawing.Point(266, 213);
             this.btndiv.Name = "btndiv";
             this.btndiv.Size = new System.Drawing.Size(47, 23);
             this.btndiv.TabIndex = 20;
@@ -261,7 +261,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(348, 250);
+            this.ClientSize = new System.Drawing.Size(340, 250);
             this.Controls.Add(this.btndiv);
             this.Controls.Add(this.btnmulty);
             this.Controls.Add(this.btnminus);
