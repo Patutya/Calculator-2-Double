@@ -77,18 +77,22 @@ namespace calculator
                     case "+":
                         d = Convert.ToDouble(a) + Convert.ToDouble(b);
                         lblansw.Text = Convert.ToString(d);
+                        j = 2;
                         break;
                     case "-":
                         d = Convert.ToDouble(a) - Convert.ToDouble(b);
                         lblansw.Text = Convert.ToString(d);
+                        j = 2;
                         break;
                     case "X":
                         d = Convert.ToDouble(a) * Convert.ToDouble(b);
                         lblansw.Text = Convert.ToString(d);
+                        j = 2;
                         break;
                     case "/":
                         d = Convert.ToDouble(a) / Convert.ToDouble(b);
                         lblansw.Text = Convert.ToString(d);
+                        j = 2;
                         break;
                 }
             }
