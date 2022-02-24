@@ -5,7 +5,7 @@ namespace calculator
 {
     public partial class Form1 : Form
     {
-        string a = ""; 
+        string a = "";
         string b = "";
         string c = "";
         double d = 0;
@@ -72,28 +72,48 @@ namespace calculator
         {
             if (j == 1)
             {
-                switch (c)
+                if (0 != Convert.ToDouble(a) && 0 != Convert.ToDouble(b))
                 {
-                    case "+":
-                        d = Convert.ToDouble(a) + Convert.ToDouble(b);
-                        lblansw.Text = Convert.ToString(d);
-                        j = 2;
-                        break;
-                    case "-":
-                        d = Convert.ToDouble(a) - Convert.ToDouble(b);
-                        lblansw.Text = Convert.ToString(d);
-                        j = 2;
-                        break;
-                    case "X":
-                        d = Convert.ToDouble(a) * Convert.ToDouble(b);
-                        lblansw.Text = Convert.ToString(d);
-                        j = 2;
-                        break;
-                    case "/":
-                        d = Convert.ToDouble(a) / Convert.ToDouble(b);
-                        lblansw.Text = Convert.ToString(d);
-                        j = 2;
-                        break;
+                    switch (c)
+                    {
+                        case "+":
+                            d = Convert.ToDouble(a) + Convert.ToDouble(b);
+                            lblansw.Text = Convert.ToString(d);
+                            j = 2;
+                            break;
+                        case "-":
+                            d = Convert.ToDouble(a) - Convert.ToDouble(b);
+                            lblansw.Text = Convert.ToString(d);
+                            j = 2;
+                            break;
+                        case "X":
+                            d = Convert.ToDouble(a) * Convert.ToDouble(b);
+                            lblansw.Text = Convert.ToString(d);
+                            j = 2;
+                            break;
+                        case "/":
+                            if (0 != Convert.ToDouble(a) && 0 != Convert.ToDouble(b))
+                            {
+                                d = Convert.ToDouble(a) / Convert.ToDouble(b);
+                                lblansw.Text = Convert.ToString(d);
+                                j = 2;
+                            }
+                            else
+                            {
+                                a = "";
+                                b = "";
+                                c = "";
+                                d = 0;
+                                j = 0;
+                                lblansw.Text = "";
+                                lblfirst.Text = "";
+                                lblsecond.Text = "";
+                                lblchar.Text = "";
+                                MessageBox.Show("0ulze nuyof brt");
+                            }
+                            break;
+
+                    }
                 }
             }
         }
